@@ -36,14 +36,15 @@ def exclusive(request):
 
 
 def cart(request):
-    if request.user.is_authenticated:
-        customer = request.user.customer
-        cart, created = cart.objects.filter(customer = customer, completed = False)
-        cartitems = cart.cartitems_set.all()
-        # need to use a filter instead of get bc you have more than one instance
-    else:
-        cartitems = []
-        cart = {"get_cart_total": 0, "get_itemtotal": 0}
+    #cart will return an unbound local error at products/cart for local variable cart being referenced too before assignment 
+    # if request.user.is_authenticated:
+    #     customer = request.user.customer
+    #     cart, created = cart.objects.filter(customer = customer, completed = False)
+    #     cartitems = cart.cartitems_set.all()
+    #     # need to use a filter instead of get bc you have more than one instance
+    # else:
+    cartitems = []
+    cart = {"get_cart_total": 0, "get_itemtotal": 0}
 
 
     return render(request, 'cart.html', {'cartitems' : cartitems, 'cart':cart})
