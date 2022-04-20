@@ -71,7 +71,7 @@ TEMPLATES = [
         },
     },
 ]
-
+CART_SESSION_ID = 'cart'
 WSGI_APPLICATION = 'web_project.wsgi.application'
 
 

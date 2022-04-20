@@ -11,8 +11,6 @@ import uuid
 
 class Product(models.Model):
     name = models.CharField(max_length=255) 
-    image = models.ImageField(upload_to=’products/’) 
-    price = models.FloatField()
     price = models.FloatField()
     stock = models.IntegerField()
     image_url = models.CharField(max_length=2083)
