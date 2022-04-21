@@ -6,6 +6,7 @@ the fashion house emulates the bespoke standards of exquisite fabrics,
 impeccable details and perfect fits, translating these values to its womenswear and menswear collections.” 
 
 This is a mock website for The Olsen Twins live site - The collection is quite recognizable amongst my peers so I felt it was a project worth working on. 
+
 # GOALS:
 
  - the primary goal is to become familiar with Python and the popular frameworks and the process of creating a working product
@@ -19,14 +20,16 @@ This is a mock website for The Olsen Twins live site - The collection is quite r
 # Additional 
 
 • Shopping Cart added
-• User Permissions -  access to a page only with logged in user
-• Shopping Cart update cart
+• User Permissions: access to a page only with logged in user
+• Shopping Cart update 
 • Shopping Cart remove item
 
 # Stretch Goals 
 
  add a payment api 
- clean up the bootstrap cards
+ 
+# What I would like to work on more:
+ clean up the bootstrap cards for better presentation 
 
 
 # Tech Stack 
